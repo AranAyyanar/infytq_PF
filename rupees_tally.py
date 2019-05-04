@@ -3,7 +3,7 @@ def make_amount(rupees_to_make,no_of_five,no_of_one):
     one_needed=0
     sum=0
     temp=0
-    total=(5*no_of_five)+(1*no_of_five)
+    total=(5*no_of_five)+(1*no_of_one)
     if(total>=rupees_to_make):
         
         for i in range(1,no_of_five+1):
