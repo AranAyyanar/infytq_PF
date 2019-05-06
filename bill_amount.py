@@ -1,6 +1,6 @@
 def calculate_bill_amount(food_type,quantity_ordered,distance_in_kms):
     bill_amount=0
-    if(food_type=="N"and quantity_ordered>0and distance_in_kms>0):
+    if(food_type=="N"and quantity_ordered>0 and distance_in_kms>0):
         if(quantity_ordered>=1):
             bill_amount=150*quantity_ordered
             for i in range(1,distance_in_kms+1):
@@ -12,7 +12,7 @@ def calculate_bill_amount(food_type,quantity_ordered,distance_in_kms):
                     bill_amount=bill_amount+6
                 else:
                     pass
-    elif(food_type=="V"and quantity_ordered>0and distance_in_kms>0):
+    elif(food_type=="V"and quantity_ordered>0 and distance_in_kms>0):
         if(quantity_ordered>=1):
             bill_amount=120*quantity_ordered
             for i in range(1,distance_in_kms+1):
