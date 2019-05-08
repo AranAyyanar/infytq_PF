@@ -17,6 +17,7 @@ def find_max(num1, num2):
                 max_num=max(list1)
             else:
                 count=0
+                sum=0
             
     else:
         max_num=max_num
