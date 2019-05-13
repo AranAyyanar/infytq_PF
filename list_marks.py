@@ -1,14 +1,12 @@
-list_of_marks=(12,18,25,24,2,5,18,20,20,21)
-
+list_of_marks=(24, 24, 24, 24, 24, 24, 24, 25, 24, 24)
 def find_more_than_average():
     sum1=0
     count=0
     for marks in list_of_marks:
-        if marks>=10:
             sum1=sum1+marks
     sum1=sum1//10
     for marks in list_of_marks:
-        if marks>=sum1:
+        if marks>sum1:
             count=count+1
     average=count*10
     return average
@@ -29,9 +27,9 @@ def sort_marks():
     return list1
 
 def generate_frequency():
-    list3=[0 for i in range(0,25)]
+    list3=[0 for i in range(0,26)]
     for marks3 in list_of_marks:
-        for j in range(0,25):
+        for j in range(0,26):
             if j==marks3:
                 list3[j]=list3[j]+1
                 break
