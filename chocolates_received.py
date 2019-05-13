@@ -7,7 +7,7 @@ def calculate_total_chocolates():
     return sum1
 def reward_child(child_id_rewarded,extra_chocolates):
     if child_id_rewarded in child_id:
-        if extra_chocolates>1:
+        if extra_chocolates>=1:
             for i in range(0,len(child_id)):
                 if child_id[i]==child_id_rewarded:
                     chocolates_received[i]=chocolates_received[i]+extra_chocolates
