@@ -1,4 +1,4 @@
-ddef find_ten_substring(num_str):
+def find_ten_substring(num_str):
     list1=[]
     list2=[]
     list3=[]
