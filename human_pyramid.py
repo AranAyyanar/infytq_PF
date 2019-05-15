@@ -1,18 +1,17 @@
-def human_pyramid(no_of_people,max_weight):
-    sum1=no_of_people*50
-    flag=True
-    while flag==True:
-        if sum1<max_weight and no_of_people%2!=0:
-            no_of_people=no_of_people
-            print(sum1)
-            flag=False
-        else:
-            no_of_people=no_of_people-1
-            sum1=sum1-50
-    return no_of_people
+def human_pyramid(no_of_people):
+    if no_of_people==1:
+        return 1*50
+    else:
+        return no_of_people*50+human_pyramid(no_of_people-2)
 def find_maximum_people(max_weight):
-    no_of_people=int(max_weight/50)
-    weight=human_pyramid(no_of_people,max_weight)
-    return weight
-max_people=find_maximum_people(1050)
+    total=max_weight//50
+    no_of_people=0
+    sum1=0
+    for i in range(1,total+1,2):
+        sum1=sum1+(i*50)
+        if sum1<=max_weight:
+            no_of_people=i
+    return no_of_people
+    
+max_people=find_maximum_people(1000)
 print(max_people)
