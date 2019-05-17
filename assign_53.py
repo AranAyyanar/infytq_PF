@@ -1,4 +1,5 @@
-data="hi is the is herbo hero is is"
+data="hi Is is herb"
+data=data.lower()
 list1=data.split(" ")
 count=0
 list2=[] #repeat words
@@ -10,7 +11,7 @@ for i in list1:
   for j in list1:
     if i==j:
       count=count+1
-  if count>1:
+  if count>=1:
     list2.append(i)
     list3.append(count)
     count=0
@@ -36,5 +37,9 @@ if count>1:
       print(list4[i],end=' ')
       print(list5[i])
 else:
-  print(list4[0],end=' ')
-  print(list5[0])
+  f=max(list5)
+  m=list5.index(f)
+  for i in range(0,len(list4)):
+    if list4[i]==list4[m]:
+      print(list4[i],end=' ')
+      print(list5[i])
