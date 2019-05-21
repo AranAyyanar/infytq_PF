@@ -22,9 +22,9 @@ def encrypt_sentence(sentence):
         list1.append(join)
         list3=[]
         join=''
-        l=" ".join(list1)
+    l=" ".join(list1)
     return l
 
-sentence="The sun rises in the east"
+sentence="all the best my child"
 encrypted_sentence=encrypt_sentence(sentence)
 print(encrypted_sentence)
